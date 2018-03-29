@@ -16,7 +16,7 @@ class CashRegister
       @items << title
     end
     self.total
-    binding.pry
+    # binding.pry
   end
 
   def apply_discount
