@@ -23,15 +23,14 @@ class CashRegister
     end
   end
 
-  def items(title, price, quantity = 1)
+  def items
     quantity.times do
       items << title
     end
   end
 
   def void_last_transaction
-    @last_transaction = self.add_item(title, price, quantity = 1)
-    self.total - @last_transaction
+
   end
 
 end
